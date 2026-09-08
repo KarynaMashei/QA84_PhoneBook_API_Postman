@@ -14,4 +14,4 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "57993675-98a8f86d-9991-4aa7-99ec-4fcfcbb32bae" -e "57993675-44567b33-c874-4d9c-ae39-1d73f6d69742"
+          postman collection run "57993675-98a8f86d-9991-4aa7-99ec-4fcfcbb32bae" -e "57993675-44567b33-c874-4d9c-ae39-1d73f6d69742"  --env-var "BaseURI=https://contactapp-telran-backend.herokuapp.com"
